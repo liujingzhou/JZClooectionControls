@@ -1,0 +1,381 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B8C34FC41EBB190D00E887B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8C34FBB1EBB190D00E887B5 /* Assets.xcassets */; };
+		B8C34FC51EBB190D00E887B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8C34FBC1EBB190D00E887B5 /* LaunchScreen.storyboard */; };
+		B8C34FC61EBB190D00E887B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8C34FBE1EBB190D00E887B5 /* Main.storyboard */; };
+		B8C34FC71EBB190D00E887B5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8C34FC01EBB190D00E887B5 /* Info.plist */; };
+		B8C34FC81EBB190D00E887B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C34FC11EBB190D00E887B5 /* main.m */; };
+		B8D524191EBB24520044ACE6 /* JZExampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D524121EBB24520044ACE6 /* JZExampleTableViewController.m */; };
+		B8D5241A1EBB24520044ACE6 /* JZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D524141EBB24520044ACE6 /* JZNavigationController.m */; };
+		B8D5241B1EBB24520044ACE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D524181EBB24520044ACE6 /* AppDelegate.m */; };
+		B8D5241E1EBB249C0044ACE6 /* JZExample.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D5241D1EBB249C0044ACE6 /* JZExample.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B8C34F6C1EBB171800E887B5 /* JZClooectionControls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JZClooectionControls.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8C34FBB1EBB190D00E887B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B8C34FBD1EBB190D00E887B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B8C34FBF1EBB190D00E887B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B8C34FC01EBB190D00E887B5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8C34FC11EBB190D00E887B5 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B8D524111EBB24520044ACE6 /* JZExampleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZExampleTableViewController.h; sourceTree = "<group>"; };
+		B8D524121EBB24520044ACE6 /* JZExampleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZExampleTableViewController.m; sourceTree = "<group>"; };
+		B8D524131EBB24520044ACE6 /* JZNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZNavigationController.h; sourceTree = "<group>"; };
+		B8D524141EBB24520044ACE6 /* JZNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZNavigationController.m; sourceTree = "<group>"; };
+		B8D524171EBB24520044ACE6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B8D524181EBB24520044ACE6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B8D5241C1EBB249C0044ACE6 /* JZExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZExample.h; sourceTree = "<group>"; };
+		B8D5241D1EBB249C0044ACE6 /* JZExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZExample.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B8C34F691EBB171800E887B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B8C34F631EBB171800E887B5 = {
+			isa = PBXGroup;
+			children = (
+				B8C34FB31EBB190D00E887B5 /* JZClooectionControls */,
+				B8C34F6D1EBB171800E887B5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B8C34F6D1EBB171800E887B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8C34F6C1EBB171800E887B5 /* JZClooectionControls.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B8C34FB31EBB190D00E887B5 /* JZClooectionControls */ = {
+			isa = PBXGroup;
+			children = (
+				B8D5240D1EBB24520044ACE6 /* Classes */,
+				B8C34FBA1EBB190D00E887B5 /* Supporting Files */,
+			);
+			path = JZClooectionControls;
+			sourceTree = "<group>";
+		};
+		B8C34FBA1EBB190D00E887B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B8C34FBB1EBB190D00E887B5 /* Assets.xcassets */,
+				B8C34FBC1EBB190D00E887B5 /* LaunchScreen.storyboard */,
+				B8C34FBE1EBB190D00E887B5 /* Main.storyboard */,
+				B8C34FC01EBB190D00E887B5 /* Info.plist */,
+				B8C34FC11EBB190D00E887B5 /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B8D5240D1EBB24520044ACE6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B8D5240E1EBB24520044ACE6 /* First */,
+				B8D524161EBB24520044ACE6 /* Other */,
+			);
+			name = Classes;
+			path = "Supporting Files/Classes";
+			sourceTree = "<group>";
+		};
+		B8D5240E1EBB24520044ACE6 /* First */ = {
+			isa = PBXGroup;
+			children = (
+				B8D5240F1EBB24520044ACE6 /* Models */,
+				B8D524101EBB24520044ACE6 /* ViewControllers */,
+				B8D524151EBB24520044ACE6 /* Views */,
+			);
+			path = First;
+			sourceTree = "<group>";
+		};
+		B8D5240F1EBB24520044ACE6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B8D5241C1EBB249C0044ACE6 /* JZExample.h */,
+				B8D5241D1EBB249C0044ACE6 /* JZExample.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B8D524101EBB24520044ACE6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B8D524131EBB24520044ACE6 /* JZNavigationController.h */,
+				B8D524141EBB24520044ACE6 /* JZNavigationController.m */,
+				B8D524111EBB24520044ACE6 /* JZExampleTableViewController.h */,
+				B8D524121EBB24520044ACE6 /* JZExampleTableViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B8D524151EBB24520044ACE6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B8D524161EBB24520044ACE6 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				B8D524171EBB24520044ACE6 /* AppDelegate.h */,
+				B8D524181EBB24520044ACE6 /* AppDelegate.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B8C34F6B1EBB171800E887B5 /* JZClooectionControls */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8C34F831EBB171800E887B5 /* Build configuration list for PBXNativeTarget "JZClooectionControls" */;
+			buildPhases = (
+				B8C34F681EBB171800E887B5 /* Sources */,
+				B8C34F691EBB171800E887B5 /* Frameworks */,
+				B8C34F6A1EBB171800E887B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JZClooectionControls;
+			productName = JZClooectionControls;
+			productReference = B8C34F6C1EBB171800E887B5 /* JZClooectionControls.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B8C34F641EBB171800E887B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JZ;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = ljz;
+				TargetAttributes = {
+					B8C34F6B1EBB171800E887B5 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B8C34F671EBB171800E887B5 /* Build configuration list for PBXProject "JZClooectionControls" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B8C34F631EBB171800E887B5;
+			productRefGroup = B8C34F6D1EBB171800E887B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B8C34F6B1EBB171800E887B5 /* JZClooectionControls */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B8C34F6A1EBB171800E887B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8C34FC71EBB190D00E887B5 /* Info.plist in Resources */,
+				B8C34FC61EBB190D00E887B5 /* Main.storyboard in Resources */,
+				B8C34FC41EBB190D00E887B5 /* Assets.xcassets in Resources */,
+				B8C34FC51EBB190D00E887B5 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B8C34F681EBB171800E887B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8D5241B1EBB24520044ACE6 /* AppDelegate.m in Sources */,
+				B8D524191EBB24520044ACE6 /* JZExampleTableViewController.m in Sources */,
+				B8C34FC81EBB190D00E887B5 /* main.m in Sources */,
+				B8D5241A1EBB24520044ACE6 /* JZNavigationController.m in Sources */,
+				B8D5241E1EBB249C0044ACE6 /* JZExample.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B8C34FBC1EBB190D00E887B5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8C34FBD1EBB190D00E887B5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B8C34FBE1EBB190D00E887B5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8C34FBF1EBB190D00E887B5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B8C34F811EBB171800E887B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B8C34F821EBB171800E887B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B8C34F841EBB171800E887B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/JZClooectionControls/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liujingzhou.JZClooectionControls;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B8C34F851EBB171800E887B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/JZClooectionControls/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liujingzhou.JZClooectionControls;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B8C34F671EBB171800E887B5 /* Build configuration list for PBXProject "JZClooectionControls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8C34F811EBB171800E887B5 /* Debug */,
+				B8C34F821EBB171800E887B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8C34F831EBB171800E887B5 /* Build configuration list for PBXNativeTarget "JZClooectionControls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8C34F841EBB171800E887B5 /* Debug */,
+				B8C34F851EBB171800E887B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B8C34F641EBB171800E887B5 /* Project object */;
+}
