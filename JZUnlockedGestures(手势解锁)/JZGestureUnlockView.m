@@ -181,16 +181,12 @@
 
 - (void)layoutSubviews{
     [super layoutSubviews];
-    //总列数
-    int cloumn = 3;
-//    CGFloat btnWH = 74;
-    //每列之间的间距
-    CGFloat margin = (self.bounds.size.width - cloumn * _btnWH) / (cloumn + 1);
+    int cloumn = 3; //总列数
+
+    CGFloat margin = (self.bounds.size.width - cloumn * _btnWH) / (cloumn + 1); //列间距
     
-    //当前所在的列
-    int curClounm = 0;
-    //当前所在的行
-    int curRow = 0;
+    int curClounm = 0; //当前列
+    int curRow = 0;    //当前行
     
     CGFloat x = 0;
     CGFloat y = 0;
@@ -210,6 +206,7 @@
 }
 
 - (void)drawRect:(CGRect)rect {
+    //清除之前绘图
     CGContextClearRect(UIGraphicsGetCurrentContext(), rect);
     //如果数组当中没有元素或者不显示连接线,就不让它进行绘图.直接返回.
     if(self.selectBtnArray.count <= 0 || NO == self.isShowLine) return;
