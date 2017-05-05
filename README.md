@@ -9,6 +9,12 @@
 * 具体例子见：JZGestureUnlockExample
 
 ```objc
+支持xib创建及代码创建
+使用注意：1.使用时请设置默认图片和选中图片,否则将显示空白
+         2.设置代理以接收返回密码值
+         3.请注意查看tag值和其它view的tag值是否有冲突
+         4.根据需求设置自定义属性
+
 @class JZGestureUnlockView;
 @protocol JZGestureUnlockViewDelegate <NSObject>
 /**

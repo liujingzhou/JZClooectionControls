@@ -114,9 +114,6 @@
 
     for (UIButton *btn in self.subviews) {
         if (CGRectContainsPoint(btn.frame, point)) {
-            if ([self.delegate respondsToSelector:@selector(gestureUnlockView:userDidSeletedButtonSeletedButton:)]) {
-                [self.delegate gestureUnlockView:self userDidSeletedButtonSeletedButton:btn];
-            }
             return btn;
         }
     }
@@ -137,6 +134,9 @@
     
     if (btn && btn.selected == NO) {
         btn.selected = YES;
+        if ([self.delegate respondsToSelector:@selector(gestureUnlockView:userDidSeletedButtonSeletedButton:)]) {
+            [self.delegate gestureUnlockView:self userDidSeletedButtonSeletedButton:btn];
+        }
         [self.selectBtnArray addObject:btn];
     }
     
@@ -149,6 +149,9 @@
     UIButton *btn  = [self btnRectContainsPoint:curP];
     if (btn && btn.selected == NO) {
         btn.selected = YES;
+        if ([self.delegate respondsToSelector:@selector(gestureUnlockView:userDidSeletedButtonSeletedButton:)]) {
+            [self.delegate gestureUnlockView:self userDidSeletedButtonSeletedButton:btn];
+        }
         [self.selectBtnArray addObject:btn];
     }
     
