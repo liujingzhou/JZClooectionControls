@@ -16,6 +16,8 @@
 		B8D5241A1EBB24520044ACE6 /* JZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D524141EBB24520044ACE6 /* JZNavigationController.m */; };
 		B8D5241B1EBB24520044ACE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D524181EBB24520044ACE6 /* AppDelegate.m */; };
 		B8D5241E1EBB249C0044ACE6 /* JZExample.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D5241D1EBB249C0044ACE6 /* JZExample.m */; };
+		B8D524231EBB2D6D0044ACE6 /* JZGestureUnlockView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D524221EBB2D6D0044ACE6 /* JZGestureUnlockView.m */; };
+		B8D524271EBB3A8F0044ACE6 /* JZGestureUnlockExamVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D524261EBB3A8F0044ACE6 /* JZGestureUnlockExamVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,10 @@
 		B8D524181EBB24520044ACE6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B8D5241C1EBB249C0044ACE6 /* JZExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZExample.h; sourceTree = "<group>"; };
 		B8D5241D1EBB249C0044ACE6 /* JZExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZExample.m; sourceTree = "<group>"; };
+		B8D524211EBB2D6D0044ACE6 /* JZGestureUnlockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZGestureUnlockView.h; sourceTree = "<group>"; };
+		B8D524221EBB2D6D0044ACE6 /* JZGestureUnlockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZGestureUnlockView.m; sourceTree = "<group>"; };
+		B8D524251EBB3A8F0044ACE6 /* JZGestureUnlockExamVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZGestureUnlockExamVC.h; sourceTree = "<group>"; };
+		B8D524261EBB3A8F0044ACE6 /* JZGestureUnlockExamVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZGestureUnlockExamVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,7 @@
 		B8C34FB31EBB190D00E887B5 /* JZClooectionControls */ = {
 			isa = PBXGroup;
 			children = (
+				B8D524201EBB2D6D0044ACE6 /* JZUnlockedGestures(手势解锁) */,
 				B8D5240D1EBB24520044ACE6 /* Classes */,
 				B8C34FBA1EBB190D00E887B5 /* Supporting Files */,
 			);
@@ -86,6 +93,7 @@
 		B8D5240D1EBB24520044ACE6 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B8D524241EBB3A460044ACE6 /* JZGestureUnlockExample */,
 				B8D5240E1EBB24520044ACE6 /* First */,
 				B8D524161EBB24520044ACE6 /* Other */,
 			);
@@ -137,6 +145,25 @@
 				B8D524181EBB24520044ACE6 /* AppDelegate.m */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		B8D524201EBB2D6D0044ACE6 /* JZUnlockedGestures(手势解锁) */ = {
+			isa = PBXGroup;
+			children = (
+				B8D524211EBB2D6D0044ACE6 /* JZGestureUnlockView.h */,
+				B8D524221EBB2D6D0044ACE6 /* JZGestureUnlockView.m */,
+			);
+			name = "JZUnlockedGestures(手势解锁)";
+			path = "../JZUnlockedGestures(手势解锁)";
+			sourceTree = "<group>";
+		};
+		B8D524241EBB3A460044ACE6 /* JZGestureUnlockExample */ = {
+			isa = PBXGroup;
+			children = (
+				B8D524251EBB3A8F0044ACE6 /* JZGestureUnlockExamVC.h */,
+				B8D524261EBB3A8F0044ACE6 /* JZGestureUnlockExamVC.m */,
+			);
+			path = JZGestureUnlockExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,8 +241,10 @@
 			files = (
 				B8D5241B1EBB24520044ACE6 /* AppDelegate.m in Sources */,
 				B8D524191EBB24520044ACE6 /* JZExampleTableViewController.m in Sources */,
+				B8D524231EBB2D6D0044ACE6 /* JZGestureUnlockView.m in Sources */,
 				B8C34FC81EBB190D00E887B5 /* main.m in Sources */,
 				B8D5241A1EBB24520044ACE6 /* JZNavigationController.m in Sources */,
+				B8D524271EBB3A8F0044ACE6 /* JZGestureUnlockExamVC.m in Sources */,
 				B8D5241E1EBB249C0044ACE6 /* JZExample.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,7 +9,7 @@
 #import "JZExampleTableViewController.h"
 
 #import "JZExample.h"
-
+#import "JZGestureUnlockExamVC.h"
 
 @interface JZExampleTableViewController ()
 @property(nonatomic, strong) NSArray *dataArray;
@@ -28,7 +28,7 @@
     if (!_dataArray) {
         JZExample *gestureUnlock = [[JZExample alloc] init];
         gestureUnlock.cellTitleText = @"手势解锁";
-        gestureUnlock.pushVcClass = nil;
+        gestureUnlock.pushVcClass = [JZGestureUnlockExamVC class];
         
         JZExample *drawingBoard = [[JZExample alloc] init];
         drawingBoard.cellTitleText = @"画板";
@@ -71,9 +71,10 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-//    JZExample *exam = self.dataArray[indexPath.row];
-//    UIViewController *vc = [[exam.pushVcClass alloc] init];
-//    [self.navigationController pushViewController:vc animated:YES];
+    JZExample *exam = self.dataArray[indexPath.row];
+    UIViewController *vc = [[exam.pushVcClass alloc] init];
+    vc.title = exam.cellTitleText;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
