@@ -7,28 +7,43 @@
 //
 
 #import "JZExampleTableViewController.h"
-typedef enum  {
-    JZCellTypeGestureUnlock,     //手势解锁
-    JZCellTypeDrawingBoard,      //画板
-    JZCellTypeGradientProgress,  //渐变进度条
-}JZCellType;
+
+#import "JZExample.h"
+#import "JZGestureUnlockExamVC.h"
+#import "JZViscosityBtnExamVC.h"
 
 @interface JZExampleTableViewController ()
-@property(nonatomic, strong) NSMutableArray *dataArray;
+@property(nonatomic, strong) NSArray *dataArray;
 @end
 
 @implementation JZExampleTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.title = @"控件集";
     self.tableView.tableFooterView = [[UIView alloc] init];
 }
 
 #pragma mark - setter and getter
-- (NSMutableArray *)dataArray {
+- (NSArray *)dataArray {
     if (!_dataArray) {
-        _dataArray = [NSMutableArray array];
-        _dataArray add
+        JZExample *gestureUnlock = [[JZExample alloc] init];
+        gestureUnlock.cellTitleText = @"手势解锁";
+        gestureUnlock.pushVcClass = [JZGestureUnlockExamVC class];
+        
+        JZExample *drawingBoard = [[JZExample alloc] init];
+        drawingBoard.cellTitleText = @"画板";
+        drawingBoard.pushVcClass = nil;
+        
+        JZExample *gradientProgress = [[JZExample alloc] init];
+        gradientProgress.cellTitleText = @"渐变进度条";
+        gradientProgress.pushVcClass = nil;
+        
+        JZExample *viscosityBtn = [[JZExample alloc] init];
+        viscosityBtn.cellTitleText = @"粘性按钮";
+        viscosityBtn.pushVcClass = [JZViscosityBtnExamVC class];
+        
+        _dataArray = @[gestureUnlock,drawingBoard,gradientProgress,viscosityBtn];
     }
     return _dataArray;
 }
@@ -54,72 +69,22 @@ typedef enum  {
         exampleCell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseId];
         exampleCell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
-    
-    exampleCell.textLabel.text = self.dataArray[indexPath.row];
+    JZExample *exam = self.dataArray[indexPath.row];
+    exampleCell.textLabel.text = exam.cellTitleText;
    
-    
     return exampleCell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    switch (indexPath.row) {
-        case <#constant#>:
-            <#statements#>
-            break;
-            
-        default:
-            break;
-    }
+    JZExample *exam = self.dataArray[indexPath.row];
+    UIViewController *vc = [[exam.pushVcClass alloc] init];
+    vc.title = exam.cellTitleText;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

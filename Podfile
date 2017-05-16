@@ -1,0 +1,2 @@
+target 'JZClooectionControls'
+pod 'Masonry'

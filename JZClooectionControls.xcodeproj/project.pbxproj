@@ -7,38 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B8C34FC41EBB190D00E887B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8C34FBB1EBB190D00E887B5 /* Assets.xcassets */; };
-		B8C34FC51EBB190D00E887B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8C34FBC1EBB190D00E887B5 /* LaunchScreen.storyboard */; };
-		B8C34FC61EBB190D00E887B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8C34FBE1EBB190D00E887B5 /* Main.storyboard */; };
-		B8C34FC71EBB190D00E887B5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8C34FC01EBB190D00E887B5 /* Info.plist */; };
-		B8C34FC81EBB190D00E887B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C34FC11EBB190D00E887B5 /* main.m */; };
-		B8D524191EBB24520044ACE6 /* JZExampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D524121EBB24520044ACE6 /* JZExampleTableViewController.m */; };
-		B8D5241A1EBB24520044ACE6 /* JZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D524141EBB24520044ACE6 /* JZNavigationController.m */; };
-		B8D5241B1EBB24520044ACE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D524181EBB24520044ACE6 /* AppDelegate.m */; };
-		B8D5241E1EBB249C0044ACE6 /* JZExample.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D5241D1EBB249C0044ACE6 /* JZExample.m */; };
-		B8D524231EBB2D6D0044ACE6 /* JZGestureUnlockView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D524221EBB2D6D0044ACE6 /* JZGestureUnlockView.m */; };
-		B8D524271EBB3A8F0044ACE6 /* JZGestureUnlockExamVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D524261EBB3A8F0044ACE6 /* JZGestureUnlockExamVC.m */; };
+		A6BD244AA05B6FE688A1EFDE /* libPods-JZClooectionControls.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFC64C3FF3D4303FD8A29FB6 /* libPods-JZClooectionControls.a */; };
+		B80692DB1EC9BA3D00C7B82B /* JZViscosityBtnExamCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B80692DA1EC9BA3D00C7B82B /* JZViscosityBtnExamCellModel.m */; };
+		B8AC7C431EC9A3A30077535B /* JZExample.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AC7C281EC9A3A30077535B /* JZExample.m */; };
+		B8AC7C441EC9A3A30077535B /* JZExampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AC7C2B1EC9A3A30077535B /* JZExampleTableViewController.m */; };
+		B8AC7C451EC9A3A30077535B /* JZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AC7C2D1EC9A3A30077535B /* JZNavigationController.m */; };
+		B8AC7C461EC9A3A30077535B /* JZGestureUnlockExamVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AC7C311EC9A3A30077535B /* JZGestureUnlockExamVC.m */; };
+		B8AC7C471EC9A3A30077535B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AC7C341EC9A3A30077535B /* AppDelegate.m */; };
+		B8AC7C4A1EC9A3A30077535B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8AC7C3C1EC9A3A30077535B /* Assets.xcassets */; };
+		B8AC7C4B1EC9A3A30077535B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8AC7C3D1EC9A3A30077535B /* LaunchScreen.storyboard */; };
+		B8AC7C4C1EC9A3A30077535B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8AC7C3F1EC9A3A30077535B /* Main.storyboard */; };
+		B8AC7C4D1EC9A3A30077535B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8AC7C411EC9A3A30077535B /* Info.plist */; };
+		B8AC7C4E1EC9A3A30077535B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AC7C421EC9A3A30077535B /* main.m */; };
+		B8AC7C5D1EC9A3F80077535B /* JZGestureUnlockView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AC7C591EC9A3F80077535B /* JZGestureUnlockView.m */; };
+		B8AC7C5E1EC9A3F80077535B /* JZViscosityBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AC7C5C1EC9A3F80077535B /* JZViscosityBtn.m */; };
+		B8AC7C681EC9A5750077535B /* JZViscosityBtnExamVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AC7C671EC9A5750077535B /* JZViscosityBtnExamVC.m */; };
+		B8AC7C6B1EC9A5AE0077535B /* JZViscosityBtnExamCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AC7C6A1EC9A5AE0077535B /* JZViscosityBtnExamCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0481028F33A3E0A0CBFDDCBD /* Pods-JZClooectionControls.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JZClooectionControls.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JZClooectionControls/Pods-JZClooectionControls.debug.xcconfig"; sourceTree = "<group>"; };
+		93D6C01D802B580F4EF61D45 /* Pods-JZClooectionControls.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JZClooectionControls.release.xcconfig"; path = "Pods/Target Support Files/Pods-JZClooectionControls/Pods-JZClooectionControls.release.xcconfig"; sourceTree = "<group>"; };
+		B80692D91EC9BA3D00C7B82B /* JZViscosityBtnExamCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZViscosityBtnExamCellModel.h; sourceTree = "<group>"; };
+		B80692DA1EC9BA3D00C7B82B /* JZViscosityBtnExamCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZViscosityBtnExamCellModel.m; sourceTree = "<group>"; };
+		B8AC7C271EC9A3A30077535B /* JZExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZExample.h; sourceTree = "<group>"; };
+		B8AC7C281EC9A3A30077535B /* JZExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZExample.m; sourceTree = "<group>"; };
+		B8AC7C2A1EC9A3A30077535B /* JZExampleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZExampleTableViewController.h; sourceTree = "<group>"; };
+		B8AC7C2B1EC9A3A30077535B /* JZExampleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZExampleTableViewController.m; sourceTree = "<group>"; };
+		B8AC7C2C1EC9A3A30077535B /* JZNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZNavigationController.h; sourceTree = "<group>"; };
+		B8AC7C2D1EC9A3A30077535B /* JZNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZNavigationController.m; sourceTree = "<group>"; };
+		B8AC7C301EC9A3A30077535B /* JZGestureUnlockExamVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZGestureUnlockExamVC.h; sourceTree = "<group>"; };
+		B8AC7C311EC9A3A30077535B /* JZGestureUnlockExamVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZGestureUnlockExamVC.m; sourceTree = "<group>"; };
+		B8AC7C331EC9A3A30077535B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B8AC7C341EC9A3A30077535B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B8AC7C3C1EC9A3A30077535B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B8AC7C3E1EC9A3A30077535B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B8AC7C401EC9A3A30077535B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B8AC7C411EC9A3A30077535B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8AC7C421EC9A3A30077535B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B8AC7C581EC9A3F80077535B /* JZGestureUnlockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZGestureUnlockView.h; sourceTree = "<group>"; };
+		B8AC7C591EC9A3F80077535B /* JZGestureUnlockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZGestureUnlockView.m; sourceTree = "<group>"; };
+		B8AC7C5B1EC9A3F80077535B /* JZViscosityBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZViscosityBtn.h; sourceTree = "<group>"; };
+		B8AC7C5C1EC9A3F80077535B /* JZViscosityBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZViscosityBtn.m; sourceTree = "<group>"; };
+		B8AC7C661EC9A5750077535B /* JZViscosityBtnExamVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZViscosityBtnExamVC.h; sourceTree = "<group>"; };
+		B8AC7C671EC9A5750077535B /* JZViscosityBtnExamVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZViscosityBtnExamVC.m; sourceTree = "<group>"; };
+		B8AC7C691EC9A5AE0077535B /* JZViscosityBtnExamCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZViscosityBtnExamCell.h; sourceTree = "<group>"; };
+		B8AC7C6A1EC9A5AE0077535B /* JZViscosityBtnExamCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZViscosityBtnExamCell.m; sourceTree = "<group>"; };
+		B8AC7C6C1EC9ABBE0077535B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		B8C34F6C1EBB171800E887B5 /* JZClooectionControls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JZClooectionControls.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8C34FBB1EBB190D00E887B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B8C34FBD1EBB190D00E887B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B8C34FBF1EBB190D00E887B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B8C34FC01EBB190D00E887B5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B8C34FC11EBB190D00E887B5 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B8D524111EBB24520044ACE6 /* JZExampleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZExampleTableViewController.h; sourceTree = "<group>"; };
-		B8D524121EBB24520044ACE6 /* JZExampleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZExampleTableViewController.m; sourceTree = "<group>"; };
-		B8D524131EBB24520044ACE6 /* JZNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZNavigationController.h; sourceTree = "<group>"; };
-		B8D524141EBB24520044ACE6 /* JZNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZNavigationController.m; sourceTree = "<group>"; };
-		B8D524171EBB24520044ACE6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		B8D524181EBB24520044ACE6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B8D5241C1EBB249C0044ACE6 /* JZExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZExample.h; sourceTree = "<group>"; };
-		B8D5241D1EBB249C0044ACE6 /* JZExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZExample.m; sourceTree = "<group>"; };
-		B8D524211EBB2D6D0044ACE6 /* JZGestureUnlockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZGestureUnlockView.h; sourceTree = "<group>"; };
-		B8D524221EBB2D6D0044ACE6 /* JZGestureUnlockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZGestureUnlockView.m; sourceTree = "<group>"; };
-		B8D524251EBB3A8F0044ACE6 /* JZGestureUnlockExamVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZGestureUnlockExamVC.h; sourceTree = "<group>"; };
-		B8D524261EBB3A8F0044ACE6 /* JZGestureUnlockExamVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZGestureUnlockExamVC.m; sourceTree = "<group>"; };
+		FFC64C3FF3D4303FD8A29FB6 /* libPods-JZClooectionControls.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JZClooectionControls.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,17 +63,182 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6BD244AA05B6FE688A1EFDE /* libPods-JZClooectionControls.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04E0D86AD5BE71CA025BA914 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0481028F33A3E0A0CBFDDCBD /* Pods-JZClooectionControls.debug.xcconfig */,
+				93D6C01D802B580F4EF61D45 /* Pods-JZClooectionControls.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		35F5DF60655082C1E7713DF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFC64C3FF3D4303FD8A29FB6 /* libPods-JZClooectionControls.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8AC7C231EC9A3A30077535B /* JZClooectionControls */ = {
+			isa = PBXGroup;
+			children = (
+				B8AC7C5A1EC9A3F80077535B /* JZViscosityBtn(仿QQ粘性按钮) */,
+				B8AC7C571EC9A3F80077535B /* JZUnlockedGestures(手势解锁) */,
+				B8AC7C241EC9A3A30077535B /* Classes */,
+				B8AC7C3B1EC9A3A30077535B /* Supporting Files */,
+			);
+			path = JZClooectionControls;
+			sourceTree = "<group>";
+		};
+		B8AC7C241EC9A3A30077535B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B8AC7C2F1EC9A3A30077535B /* JZGestureUnlockExample */,
+				B8AC7C5F1EC9A5190077535B /* JZViscosityBtnExample */,
+				B8AC7C251EC9A3A30077535B /* First */,
+				B8AC7C321EC9A3A30077535B /* Other */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B8AC7C251EC9A3A30077535B /* First */ = {
+			isa = PBXGroup;
+			children = (
+				B8AC7C261EC9A3A30077535B /* Models */,
+				B8AC7C291EC9A3A30077535B /* ViewControllers */,
+				B8AC7C2E1EC9A3A30077535B /* Views */,
+			);
+			path = First;
+			sourceTree = "<group>";
+		};
+		B8AC7C261EC9A3A30077535B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B8AC7C271EC9A3A30077535B /* JZExample.h */,
+				B8AC7C281EC9A3A30077535B /* JZExample.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B8AC7C291EC9A3A30077535B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B8AC7C2A1EC9A3A30077535B /* JZExampleTableViewController.h */,
+				B8AC7C2B1EC9A3A30077535B /* JZExampleTableViewController.m */,
+				B8AC7C2C1EC9A3A30077535B /* JZNavigationController.h */,
+				B8AC7C2D1EC9A3A30077535B /* JZNavigationController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B8AC7C2E1EC9A3A30077535B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B8AC7C2F1EC9A3A30077535B /* JZGestureUnlockExample */ = {
+			isa = PBXGroup;
+			children = (
+				B8AC7C301EC9A3A30077535B /* JZGestureUnlockExamVC.h */,
+				B8AC7C311EC9A3A30077535B /* JZGestureUnlockExamVC.m */,
+			);
+			path = JZGestureUnlockExample;
+			sourceTree = "<group>";
+		};
+		B8AC7C321EC9A3A30077535B /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				B8AC7C331EC9A3A30077535B /* AppDelegate.h */,
+				B8AC7C341EC9A3A30077535B /* AppDelegate.m */,
+				B8AC7C6C1EC9ABBE0077535B /* PrefixHeader.pch */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		B8AC7C3B1EC9A3A30077535B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B8AC7C3C1EC9A3A30077535B /* Assets.xcassets */,
+				B8AC7C3D1EC9A3A30077535B /* LaunchScreen.storyboard */,
+				B8AC7C3F1EC9A3A30077535B /* Main.storyboard */,
+				B8AC7C411EC9A3A30077535B /* Info.plist */,
+				B8AC7C421EC9A3A30077535B /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B8AC7C571EC9A3F80077535B /* JZUnlockedGestures(手势解锁) */ = {
+			isa = PBXGroup;
+			children = (
+				B8AC7C581EC9A3F80077535B /* JZGestureUnlockView.h */,
+				B8AC7C591EC9A3F80077535B /* JZGestureUnlockView.m */,
+			);
+			path = "JZUnlockedGestures(手势解锁)";
+			sourceTree = SOURCE_ROOT;
+		};
+		B8AC7C5A1EC9A3F80077535B /* JZViscosityBtn(仿QQ粘性按钮) */ = {
+			isa = PBXGroup;
+			children = (
+				B8AC7C5B1EC9A3F80077535B /* JZViscosityBtn.h */,
+				B8AC7C5C1EC9A3F80077535B /* JZViscosityBtn.m */,
+			);
+			path = "JZViscosityBtn(仿QQ粘性按钮)";
+			sourceTree = SOURCE_ROOT;
+		};
+		B8AC7C5F1EC9A5190077535B /* JZViscosityBtnExample */ = {
+			isa = PBXGroup;
+			children = (
+				B8AC7C601EC9A5190077535B /* Models */,
+				B8AC7C611EC9A5190077535B /* ViewControllers */,
+				B8AC7C621EC9A5190077535B /* Views */,
+			);
+			path = JZViscosityBtnExample;
+			sourceTree = "<group>";
+		};
+		B8AC7C601EC9A5190077535B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B80692D91EC9BA3D00C7B82B /* JZViscosityBtnExamCellModel.h */,
+				B80692DA1EC9BA3D00C7B82B /* JZViscosityBtnExamCellModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B8AC7C611EC9A5190077535B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B8AC7C661EC9A5750077535B /* JZViscosityBtnExamVC.h */,
+				B8AC7C671EC9A5750077535B /* JZViscosityBtnExamVC.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B8AC7C621EC9A5190077535B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B8AC7C691EC9A5AE0077535B /* JZViscosityBtnExamCell.h */,
+				B8AC7C6A1EC9A5AE0077535B /* JZViscosityBtnExamCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		B8C34F631EBB171800E887B5 = {
 			isa = PBXGroup;
 			children = (
-				B8C34FB31EBB190D00E887B5 /* JZClooectionControls */,
+				B8AC7C231EC9A3A30077535B /* JZClooectionControls */,
 				B8C34F6D1EBB171800E887B5 /* Products */,
+				04E0D86AD5BE71CA025BA914 /* Pods */,
+				35F5DF60655082C1E7713DF2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,104 +250,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B8C34FB31EBB190D00E887B5 /* JZClooectionControls */ = {
-			isa = PBXGroup;
-			children = (
-				B8D524201EBB2D6D0044ACE6 /* JZUnlockedGestures(手势解锁) */,
-				B8D5240D1EBB24520044ACE6 /* Classes */,
-				B8C34FBA1EBB190D00E887B5 /* Supporting Files */,
-			);
-			path = JZClooectionControls;
-			sourceTree = "<group>";
-		};
-		B8C34FBA1EBB190D00E887B5 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B8C34FBB1EBB190D00E887B5 /* Assets.xcassets */,
-				B8C34FBC1EBB190D00E887B5 /* LaunchScreen.storyboard */,
-				B8C34FBE1EBB190D00E887B5 /* Main.storyboard */,
-				B8C34FC01EBB190D00E887B5 /* Info.plist */,
-				B8C34FC11EBB190D00E887B5 /* main.m */,
-			);
-			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B8D5240D1EBB24520044ACE6 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				B8D524241EBB3A460044ACE6 /* JZGestureUnlockExample */,
-				B8D5240E1EBB24520044ACE6 /* First */,
-				B8D524161EBB24520044ACE6 /* Other */,
-			);
-			name = Classes;
-			path = "Supporting Files/Classes";
-			sourceTree = "<group>";
-		};
-		B8D5240E1EBB24520044ACE6 /* First */ = {
-			isa = PBXGroup;
-			children = (
-				B8D5240F1EBB24520044ACE6 /* Models */,
-				B8D524101EBB24520044ACE6 /* ViewControllers */,
-				B8D524151EBB24520044ACE6 /* Views */,
-			);
-			path = First;
-			sourceTree = "<group>";
-		};
-		B8D5240F1EBB24520044ACE6 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				B8D5241C1EBB249C0044ACE6 /* JZExample.h */,
-				B8D5241D1EBB249C0044ACE6 /* JZExample.m */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		B8D524101EBB24520044ACE6 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				B8D524131EBB24520044ACE6 /* JZNavigationController.h */,
-				B8D524141EBB24520044ACE6 /* JZNavigationController.m */,
-				B8D524111EBB24520044ACE6 /* JZExampleTableViewController.h */,
-				B8D524121EBB24520044ACE6 /* JZExampleTableViewController.m */,
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		B8D524151EBB24520044ACE6 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		B8D524161EBB24520044ACE6 /* Other */ = {
-			isa = PBXGroup;
-			children = (
-				B8D524171EBB24520044ACE6 /* AppDelegate.h */,
-				B8D524181EBB24520044ACE6 /* AppDelegate.m */,
-			);
-			path = Other;
-			sourceTree = "<group>";
-		};
-		B8D524201EBB2D6D0044ACE6 /* JZUnlockedGestures(手势解锁) */ = {
-			isa = PBXGroup;
-			children = (
-				B8D524211EBB2D6D0044ACE6 /* JZGestureUnlockView.h */,
-				B8D524221EBB2D6D0044ACE6 /* JZGestureUnlockView.m */,
-			);
-			name = "JZUnlockedGestures(手势解锁)";
-			path = "../JZUnlockedGestures(手势解锁)";
-			sourceTree = "<group>";
-		};
-		B8D524241EBB3A460044ACE6 /* JZGestureUnlockExample */ = {
-			isa = PBXGroup;
-			children = (
-				B8D524251EBB3A8F0044ACE6 /* JZGestureUnlockExamVC.h */,
-				B8D524261EBB3A8F0044ACE6 /* JZGestureUnlockExamVC.m */,
-			);
-			path = JZGestureUnlockExample;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -173,9 +257,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B8C34F831EBB171800E887B5 /* Build configuration list for PBXNativeTarget "JZClooectionControls" */;
 			buildPhases = (
+				84C161CF9ED9EA0090B1EE14 /* [CP] Check Pods Manifest.lock */,
 				B8C34F681EBB171800E887B5 /* Sources */,
 				B8C34F691EBB171800E887B5 /* Frameworks */,
 				B8C34F6A1EBB171800E887B5 /* Resources */,
+				488C849364167EE506C1CCEF /* [CP] Embed Pods Frameworks */,
+				B56409CF1141E631AC79DB27 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -198,7 +285,8 @@
 				TargetAttributes = {
 					B8C34F6B1EBB171800E887B5 = {
 						CreatedOnToolsVersion = 8.3.1;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = EKM4TJ3AC5;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -225,45 +313,97 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8C34FC71EBB190D00E887B5 /* Info.plist in Resources */,
-				B8C34FC61EBB190D00E887B5 /* Main.storyboard in Resources */,
-				B8C34FC41EBB190D00E887B5 /* Assets.xcassets in Resources */,
-				B8C34FC51EBB190D00E887B5 /* LaunchScreen.storyboard in Resources */,
+				B8AC7C4D1EC9A3A30077535B /* Info.plist in Resources */,
+				B8AC7C4C1EC9A3A30077535B /* Main.storyboard in Resources */,
+				B8AC7C4A1EC9A3A30077535B /* Assets.xcassets in Resources */,
+				B8AC7C4B1EC9A3A30077535B /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		488C849364167EE506C1CCEF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JZClooectionControls/Pods-JZClooectionControls-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84C161CF9ED9EA0090B1EE14 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B56409CF1141E631AC79DB27 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JZClooectionControls/Pods-JZClooectionControls-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B8C34F681EBB171800E887B5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8D5241B1EBB24520044ACE6 /* AppDelegate.m in Sources */,
-				B8D524191EBB24520044ACE6 /* JZExampleTableViewController.m in Sources */,
-				B8D524231EBB2D6D0044ACE6 /* JZGestureUnlockView.m in Sources */,
-				B8C34FC81EBB190D00E887B5 /* main.m in Sources */,
-				B8D5241A1EBB24520044ACE6 /* JZNavigationController.m in Sources */,
-				B8D524271EBB3A8F0044ACE6 /* JZGestureUnlockExamVC.m in Sources */,
-				B8D5241E1EBB249C0044ACE6 /* JZExample.m in Sources */,
+				B8AC7C5E1EC9A3F80077535B /* JZViscosityBtn.m in Sources */,
+				B8AC7C6B1EC9A5AE0077535B /* JZViscosityBtnExamCell.m in Sources */,
+				B8AC7C441EC9A3A30077535B /* JZExampleTableViewController.m in Sources */,
+				B8AC7C461EC9A3A30077535B /* JZGestureUnlockExamVC.m in Sources */,
+				B80692DB1EC9BA3D00C7B82B /* JZViscosityBtnExamCellModel.m in Sources */,
+				B8AC7C431EC9A3A30077535B /* JZExample.m in Sources */,
+				B8AC7C681EC9A5750077535B /* JZViscosityBtnExamVC.m in Sources */,
+				B8AC7C5D1EC9A3F80077535B /* JZGestureUnlockView.m in Sources */,
+				B8AC7C451EC9A3A30077535B /* JZNavigationController.m in Sources */,
+				B8AC7C4E1EC9A3A30077535B /* main.m in Sources */,
+				B8AC7C471EC9A3A30077535B /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B8C34FBC1EBB190D00E887B5 /* LaunchScreen.storyboard */ = {
+		B8AC7C3D1EC9A3A30077535B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B8C34FBD1EBB190D00E887B5 /* Base */,
+				B8AC7C3E1EC9A3A30077535B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		B8C34FBE1EBB190D00E887B5 /* Main.storyboard */ = {
+		B8AC7C3F1EC9A3A30077535B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B8C34FBF1EBB190D00E887B5 /* Base */,
+				B8AC7C401EC9A3A30077535B /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -314,7 +454,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -363,23 +503,35 @@
 		};
 		B8C34F841EBB171800E887B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0481028F33A3E0A0CBFDDCBD /* Pods-JZClooectionControls.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = EKM4TJ3AC5;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/JZClooectionControls/Classes/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/JZClooectionControls/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.liujingzhou.JZClooectionControls;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3c24e25e-687d-43bd-b604-95145f7fad14";
+				PROVISIONING_PROFILE_SPECIFIER = wildcard_developer;
 			};
 			name = Debug;
 		};
 		B8C34F851EBB171800E887B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93D6C01D802B580F4EF61D45 /* Pods-JZClooectionControls.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/JZClooectionControls/Classes/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/JZClooectionControls/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liujingzhou.JZClooectionControls;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

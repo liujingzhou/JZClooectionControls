@@ -1,0 +1,28 @@
+//
+//  PrefixHeader.pch
+//  JZClooectionControls
+//
+//  Created by tcyx on 2017/5/15.
+//  Copyright © 2017年 ljz. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__
+
+#import <Masonry.h>
+
+///请使用 MSLog代替NSLog MSLog在发布的产品不会打印日志
+#if (defined DEBUG) || (defined PREFORM)
+#define MSLog(fmt,...) NSLog((@"\n[文件]%s\n" "[函数]%s\n" "[行号]%d\n" "[日志]" fmt"\n\n"), __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#define MSLog(fmt,...);
+#endif
+
+
+
+
+#endif
+
+#endif /* PrefixHeader_pch */
