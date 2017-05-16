@@ -42,10 +42,9 @@
     JZViscosityBtn *viscosityBtn = [[JZViscosityBtn alloc] init];
     [self.contentView addSubview:viscosityBtn];
     
-//    viscosityBtn.frame = CGRectMake(355, 17, 10, 10);
     [viscosityBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(10, 10));
-        make.right.mas_equalTo(self.contentView).with.offset(-10);
+        make.size.mas_equalTo(CGSizeMake(13, 13));
+        make.right.mas_equalTo(self.contentView).with.offset(-15);
         make.centerY.mas_equalTo(self.contentView);
         
     }];

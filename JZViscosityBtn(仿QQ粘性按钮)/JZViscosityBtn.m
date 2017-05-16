@@ -37,8 +37,6 @@
 }
 
 - (void)setUp {
-    self.smallCircle.backgroundColor = self.backGroundColor;
-
     [self setBackgroundColor:[UIColor blueColor]];
     [self setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     self.titleLabel.font = [UIFont systemFontOfSize:12];
@@ -49,6 +47,7 @@
 
 - (void)willMoveToSuperview:(nullable UIView *)newSuperview {
     self.smallCircle = [[UIView alloc] init];
+    self.smallCircle.backgroundColor = [UIColor blueColor];
     [newSuperview insertSubview:self.smallCircle belowSubview:self];
 }
 
@@ -68,21 +67,25 @@
     if (_shapLayer == nil) {
         CAShapeLayer *shapLayer = [CAShapeLayer layer];
         [self.superview.layer insertSublayer:shapLayer atIndex:0];
-        shapLayer.fillColor = self.backGroundColor.CGColor;
+        shapLayer.fillColor = [UIColor blueColor].CGColor;
         _shapLayer = shapLayer;
     }
     return _shapLayer;
 }
 
-- (void)setBackGroundColor:(UIColor *)backGroundColor {
-    _backGroundColor = backGroundColor;
+- (void)setUserBackGroundColor:(UIColor *)userBackGroundColor {
+    _userBackGroundColor = userBackGroundColor;
     
-    _smallCircle.backgroundColor = backGroundColor;
-    self.backgroundColor = backGroundColor;
+    _smallCircle.backgroundColor = userBackGroundColor;
+    self.backgroundColor = userBackGroundColor;
 }
 
 - (NSTimeInterval)animationDurationTime {
     return _animationDurationTime ? _animationDurationTime : 1;
+}
+
+- (CGFloat)resetDistance {
+    return _resetDistance ? _resetDistance : 60;
 }
 
 #pragma mark - GestureRecognizer method
@@ -112,33 +115,33 @@
     
     UIBezierPath *path = [self pathWithSmallCircle:self.smallCircle BigCirCle:self];
     
-    // 形状图层
     if (self.smallCircle.hidden == NO) {
         self.shapLayer.path = path.CGPath;
     }
 
-    if (distance > 60) { //让小圆隐藏,让路径小时
+    if (distance > self.resetDistance) { //大于复位距离，隐藏小圆和路径
         self.smallCircle.hidden = YES;
         [self.shapLayer removeFromSuperlayer];
     }
     
     if (pan.state == UIGestureRecognizerStateEnded) { //判断距离是否需要复位.
-        if(distance < 60) { //复位
+        if(distance < self.resetDistance) { //复位
             [self.shapLayer removeFromSuperlayer];
-            self.smallCircle.hidden = NO;
+            self.smallCircle.hidden = YES;
             [UIView animateWithDuration:0.5 delay:0 usingSpringWithDamping:0.55 initialSpringVelocity:10 options:UIViewAnimationOptionCurveEaseIn animations:^{
                 self.center = self.smallCircle.center;
-            } completion:nil];
-            
+            } completion:^(BOOL finished) {
+                self.smallCircle.hidden = NO;
+            }];
         }else { //播放一个动画消失
             UIImageView *imageV = [[UIImageView alloc] initWithFrame:self.bounds];
             [self addSubview:imageV];
             
-            imageV.animationImages = _animationImageArray;
-            imageV.animationDuration = _animationDurationTime;
+            imageV.animationImages = self.animationImageArray;
+            imageV.animationDuration = self.animationDurationTime;
             [imageV startAnimating];
             
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(_animationDurationTime * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(self.animationDurationTime * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 [self removeFromSuperview];
             });
         }

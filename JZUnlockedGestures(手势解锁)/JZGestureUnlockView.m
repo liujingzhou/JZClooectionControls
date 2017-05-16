@@ -167,7 +167,7 @@
         //取消所有选中的按钮,查看选中按钮的顺序
         NSMutableString *str = [NSMutableString string];
         for (UIButton *btn in self.selectBtnArray) {
-            [str appendFormat:@"%ld",btn.tag];
+            [str appendFormat:@"%ld",(long)btn.tag];
             btn.selected = NO;
         }
         //清空所有的连线.
